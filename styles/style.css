@@ -27,6 +27,8 @@ p{
 .body-head{
     margin-bottom: 200px;
     padding: 0;
+    background-color: rgb(17, 17, 17)
+    rgba(119, 119, 119, 0);
 }
 /* banner section */
 .head-div1{
@@ -247,9 +249,6 @@ main{
     border-radius: 18px;
     padding: 22px 0 40px 54px;
 }
-.main-sec2-div1-div1{
-
-}
 .main-sec2-div1-div1-h1{
     font-size: 3rem;
     margin-bottom: 18px;
@@ -257,7 +256,7 @@ main{
 .main-sec2-div1-div1-p{
     margin-bottom: 30px;
 }
-.main-sec2-div1-div1-btn{
+.main-sec2-div1-div1-div-btn{
     padding: 13px 35px 13px 35px;
     border-radius: 42px;
     font-size: 0.9375rem;
@@ -266,6 +265,7 @@ main{
     border: none;
     font-weight: bold;
     width: 200px;
+    margin-bottom: 20px;
 }
 .main-sec2-div1{
     display: flex;
@@ -288,7 +288,7 @@ main{
     font-size: 3.125rem;
 }
 .main-sec3-div2{
-    height: 500px;
+    /* height: 500px; */
     background-color: rgb(34, 34, 34);
     display: flex;
 }
@@ -333,8 +333,9 @@ select{
     background-color: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
     border-radius: 0.5rem;
-    padding: 12px 40px 12px 20px;
+    padding: 12px 160px 12px 20px;
     border: none;
+
 }
 .main-sec3-div2-div2-div1-btn{
     padding: 13px 2px;
@@ -344,7 +345,6 @@ select{
     background-color: rgb(230, 83, 60);
     border: none;
     font-weight: bold;
-
 }
 #main-sec3-div2-div2-div1-div{
     display: grid;
@@ -439,9 +439,9 @@ select{
 /* main part is ended */
 /* footer section */
 .body-footer{
-    padding: 66px 190px 0px 190px;
+    padding: 66px 130px 30px 130px;
     background-color: rgba(255, 255, 255, 0.1);
-    height: 350px;
+    /* height: 550px; */
 }
 .footer-div1-div1-h1{
     font-size: 4.0625rem;
@@ -463,7 +463,8 @@ select{
     display: flex;
 }
 .footer-div1-div1, .footer-div1-div2{
-    margin-right: 102px;
+    margin-right: 150px;
+    /* border: 1px solid red; */
 }
 /* footer section is ended*/
 
@@ -471,12 +472,84 @@ select{
 /* responsive media query */
 
 @media  screen and (max-width:576px) {
-
     .head-sec1-nav-div2{
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        display: none;
+        text-align: start;
+    }
+    .head-sec2{
+            flex-direction: column;
+    }
+    .head-sec1-nav{
+        margin: 52px 20px 0 20px;
+        justify-content: space-between;
+    }
+    .head-sec2{
+        margin: 52px 20px 0 20px;
+    }
+    .main-sec1{
+        margin: 52px 20px 0 20px;
+    }
+    .main-sec1-div2{
+        flex-direction: column;
+    }
+    .main-sec2{
+        margin: 52px 20px 0 20px;
+    }
+    .main-sec2-div1{
+        flex-direction: column;
         
+    }
+    .main-sec2-div1-div1-div{
+        text-align: center;
+    }
+    .main-sec2-div1-div2-img{
+        width: 295px;
+        height: 320px;
+    }
+    .main-sec2{
+        padding: 22px 0 40px 47px;
+    }
+    .main-sec3-div1{
+        margin: 52px 20px 40px 20px;
+    }
+    .main-sec3-div2-div1{
+        margin: 52px 20px 0 20px;
+    }
+    .main-sec3-div2{
+        flex-direction: column;
+    }
+    .main-sec3-div2-div2{
+        margin: 52px 50px 40px 20px;
+    }
+    input[type=text]{
+        padding: 12px 10px 12px 20px;
+    }
+    select{
+        padding: 12px 107px 12px 20px;
+    }
+    .main-sec3-div2-div2-div1-div1{
+        padding: 12px 130px 12px 20px;
+    }
+    .main-sec4-div1{
+        margin: 52px 20px 0 20px;
+    }
+    .main-sec4-div2{
+        margin: 52px 30px 50px 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .body-footer{
+        padding: 52px 20px 30px 20px;;
+    }
+    .footer-div1{
+        flex-direction: column;
     }
 
 
-
-
 }
+
